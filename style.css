@@ -153,3 +153,13 @@ h1{
     background-color: #388F41;
     color: white;
 }
+
+.hp-btn{
+    font-size: 18px;
+    padding:0.5em;
+    border-radius: 12px;
+    background-color: #388F41;
+    color: white;
+    border: 1px transparent;
+    cursor: pointer;
+}
