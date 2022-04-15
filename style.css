@@ -1,7 +1,21 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
+body{
+    background-image: url('./images/Desktop\ -\ 1.png');
+    /* background-color: rgb(116, 116, 116); */
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-blend-mode: lighten;
+    
+}
+#logo{
+width: 60px;
+margin-left: 50%;
+}
+
 
 img{
     width: 350px;
@@ -10,7 +24,7 @@ img{
 }
 
 h1{
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 .flex-container{
@@ -22,61 +36,120 @@ h1{
     gap: 1em;
 }
 
-.card-container p{
+.card-container .card-content{
     text-align: center;
 }
 
 .card-container{
     width: fit-content;
     height: 500px;
-    border: 1px solid black;
+    border: 1px transparent black;
+    border-radius: 48px;
+    background-color: rgb(255, 255, 255);
 }
 
+.card-img{
+    background-image: url('./images/waffles.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 50%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.card-img2{
+    background-image: url('./images/chicken-tikka.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 50%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
 
-
+.card-img3{
+    background-image: url('./images/Chicken-Biryani.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 50%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3em;
+}
+.card-content button{
+    height: 3em;
+    width: 9em;
+    border: 1px transparent;
+    border-radius: 30px;
+    background-color: #388F41;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
 .content{
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 15%;
+    width: 70%;
 }
 
 
 .description{
-    margin: 4rem;
+    margin: 0 4rem 0 4rem;
+    
+}
+
+.description> *{
+    margin: 1em;
+}
+
+
+.description img{
+
+    max-height: 20%;
+    border-radius: 7px;
 }
 
 .procedure{
     font-size: 19px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 6em;
+   margin: 4em 0 0 4em;
 }
 .process{
     margin: 3rem 0;
-    width: 40%;
-    border: 1px solid black;
+    width: 70%;
+    /* border: 1px solid black; */
     padding: 2em;
 }
 
 .ingredients{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 2em;
 }
 
 
 .stats{
+    position: absolute;
+    top: 7em;
+    right: 18em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid ;
     padding: 12px;
-    margin:2em 0 1em 0;
+    margin:0 0 1em 0;
     gap: 1em;
-    border-radius: 9px;
+    border-radius: 15px;
     width: fit-content;
+    height: 7rem;
     align-items: center;
     text-align: center;
+    background-color: #388F41;
+    color: white;
 }
